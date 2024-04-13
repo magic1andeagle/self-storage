@@ -1,9 +1,15 @@
 :root {
-  --background: #f1f7ff;
+  --bg-color: #f1f7ff;
   --sky-color: #779ecb;
-  --blue-color: #2954b1;
+  --sea-color: #2954b1;
   --light-color: #ffffff;
   --dark-color: #000000;
+
+  --font-thin: 'Circe Thin';
+  --font-ligth: 'Circe Light';
+  --font-regular: 'Circe Regular';
+  --font-bold: 'Circe Bold';
+  --font-extra-bold: 'Circe Extra Bold';
 }
 
 * {
@@ -13,6 +19,6 @@
 }
 
 body {
-  font-family: "Circe";
-  background-color: var(--background);
+  font-family: var(--font-regular);
+  background-color: var(--bg-color);
 }

@@ -1,49 +1,49 @@
 @font-face {
   font-family: "Circe Thin";
-  src: url("Circe-Thin.eot");
-  src: url("Circe-Thin.eot?#iefix") format("embedded-opentype"),
-    url("Circe-Thin.woff") format("woff"),
-    url("Circe-Thin.ttf") format("truetype");
+  src: url("../assets/fonts/Circe-Thin.eot");
+  src: url("../assets/fonts/Circe-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Circe-Thin.woff") format("woff"),
+    url("../assets/fonts/Circe-Thin.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Circe Light";
-  src: url("Circe-Light.eot");
-  src: url("Circe-Light.eot?#iefix") format("embedded-opentype"),
-    url("Circe-Light.woff") format("woff"),
-    url("Circe-Light.ttf") format("truetype");
+  src: url("../assets/fonts/Circe-Light.eot");
+  src: url("../assets/fonts/Circe-Light.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Circe-Light.woff") format("woff"),
+    url("../assets/fonts/Circe-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Circe Regular";
-  src: url("Circe-Regular.eot");
-  src: url("Circe-Regular.eot?#iefix") format("embedded-opentype"),
-    url("Circe-Regular.woff") format("woff"),
-    url("Circe-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Circe-Regular.eot");
+  src: url("../assets/fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Circe-Regular.woff") format("woff"),
+    url("../assets/fonts/Circe-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Circe Bold";
-  src: url("Circe-Bold.eot");
-  src: url("Circe-Bold.eot?#iefix") format("embedded-opentype"),
-    url("Circe-Bold.woff") format("woff"),
-    url("Circe-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/Circe-Bold.eot");
+  src: url("../assets/fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Circe-Bold.woff") format("woff"),
+    url("../assets/fonts/Circe-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Circe Extra Bold";
-  src: url("Circe-ExtraBold.eot");
-  src: url("Circe-ExtraBold.eot?#iefix") format("embedded-opentype"),
-    url("Circe-ExtraBold.woff") format("woff"),
-    url("Circe-ExtraBold.ttf") format("truetype");
+  src: url("../assets/fonts/Circe-ExtraBold.eot");
+  src: url("../assets/fonts/Circe-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Circe-ExtraBold.woff") format("woff"),
+    url("../assets/fonts/Circe-ExtraBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

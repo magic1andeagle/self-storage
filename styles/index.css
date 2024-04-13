@@ -1,22 +1,4 @@
-.global_wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  margin: auto;
-}
-
 .header_wrapper {
-  /* position: sticky; */
   margin-bottom: 50px;
 }
 
@@ -29,73 +11,160 @@
   background-image: url(/assets/svg/header_line.svg);
 }
 
-header {
-  /* width: 1240px; */
-  position: relative;
+.header_container{
   width: 100%;
   height: 100px;
 
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  color: var(--light-color);
+  background-color: var(--sea-color);
+}
+
+header {
+  width: 1240px;
+  height: 100%;
+
+  margin: auto;
+
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 
   border-bottom: 2px solid;
   border-image: url("/assets/svg/header_line.svg") 0 0 0 0 stretch;
-
-  background-color: var(--blue-color);
 }
 
-.header_logo {
+header .header_logo {
   width: 123px;
   height: 44px;
-  margin-right: 217px;
 }
 
-.nav_info {
+header .header_logo>img{
   width: 100%;
+  object-fit: fill;
+}
+
+header ul{
+  width: 616px;
+  height: 100%;
+
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+}
+
+header ul li{
+  list-style: none;
+  color: var(--light-color);
+}
+
+header ul li.active{
+  font-family: var(--font-bold);
+}
+
+header .contacts{
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-nav {
-  display: flex;
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--light-color);
-
-  gap: 64px;
+header #burger_btn{
+  display: none;
+  background: none;
+  outline: none;
+  border: none;
 }
 
-nav p {
-  cursor: pointer;
+header .contacts> p{
+  font-family: var(--font-bold);
 }
 
-.header_contact_info {
-  display: flex;
-  gap: 3px;
-
-  color: var(--light-color);
-  font-size: 22px;
-  font-weight: 700;
+@media screen and (max-width: 1440px) {
+  header{
+    width: 1030px;
+  }
+  header ul{
+    width: 546px;
+  }
 }
 
-/* Main Product Present*/
-
-.main_product {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  background-color: var(--blue-color);
+@media screen and (max-width: 1000px) {
+  header{
+    width: 952px;
+  }
+  header ul{
+    width: 515px;
+  }
 }
 
-.product_presentation {
-  display: flex;
-  flex-direction: column;
-  gap: 49px;
+@media screen and (max-width: 768px) {
+  header{
+    width: 738px;
+  }
+  header ul{
+    width: 411px;
+  }
 }
 
-.product_presentation_data {
-  color: var(--light-color);
+@media screen and (max-width: 540px) {
+  header{
+    width: 335px;
+  }
+
+  header #burger_btn{
+    display: flex;
+  }
+
+  header> ul,
+  header> .contacts{
+    display: none;
+  }
+
+  header nav{
+    display: none;
+
+    width: 100%;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  header nav>.popup{
+    width: 253px;
+    background: var(--sea-color);
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+
+    padding: 54px 15px;
+    gap: 30px;
+  }
+
+  header nav>.popup>ul{
+    width: 100%;
+    height: auto;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 13px;
+  }
+
+  header nav>.popup>div{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header nav.active{
+    display: flex;
+  }
 }
