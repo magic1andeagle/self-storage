@@ -4,6 +4,11 @@
   --blue-color: #2954b1;
   --light-color: #ffffff;
   --dark-color: #000000;
+
+  --font-h1: 80px;
+  --font-h2: 60px;
+  --font--big: 30px;
+  --font-medium: 20px;
 }
 
 * {
