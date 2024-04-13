@@ -8,9 +8,8 @@ function getNodeFromChild(elem, nodeName){
     return node
 }
 
-function onResize(e){
+function onResize(){
     const header = document.querySelector('header')
-
 
     if(window.innerWidth <= BURGER_WIDTH && !header.classList.contains('burger')){
         const [ _logo, list, contacts ] = Array.from(header.children)
@@ -40,14 +39,9 @@ function onResize(e){
         if(content.nodeName !== "NAV"){
             return
         }
-
         header.removeChild(content)
         header.classList.remove('burger')
-
     }
-
-
-
 }
 
 window.addEventListener('resize', onResize)
