@@ -1,0 +1,18 @@
+:root {
+  --background: #f1f7ff;
+  --sky-color: #779ecb;
+  --blue-color: #2954b1;
+  --light-color: #ffffff;
+  --dark-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Circe";
+  background-color: var(--background);
+}
