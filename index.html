@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/second.css" />
     <link rel="stylesheet" href="./styles/third.css" />
     <link rel="stylesheet" href="./styles/four.css" />
+    <link rel="stylesheet" href="./styles/five.css" />
     <title>Self-Storage</title>
   </head>
   <body>
@@ -22,10 +23,10 @@
           />
         </div>
         <ul>
-          <li class="active">О нас</li>
-          <li>Наши решения</li>
-          <li>Продукты</li>
-          <li>Как это работает</li>
+          <li class="active"><a href="#about_us">О нас</a></li>
+          <li><a href="#solutions">Наши решения</a></li>
+          <li id="products">Продукты</li>
+          <li id="how_it_works">Как это работает</li>
         </ul>
         <div class="contacts">
           <img src="./assets/svg/phone.svg" alt="phone" />
@@ -82,7 +83,7 @@
       </div>
     </div>
 
-    <div class="second_slide_container">
+    <div id="about_us" class="second_slide_container">
       <div class="wrapper">
         <div class="left_side">
           <img src="./assets/svg/second_slide_employee.svg" alt="employee">
@@ -135,7 +136,7 @@
 
     </div>
 
-    <div class="four_slide_container">
+    <div class="four_slide_container" id="solutions">
       <div class="wrapper">
         <h2>Наши решения</h2>
         <div class="row">
@@ -169,6 +170,32 @@
           </div>
         </div>
         <button class="btn">Демо-версия</button>
+      </div>
+    </div>
+
+    <div class="five_slide_container">
+      <div class="wrapper">
+        <h2>Наши продукты</h2>
+        <div class="row">
+          <div class="block">
+            <span>Полная</span>
+            <h3>Автоматизация склада</h3>
+            <span>Контейнеры оборудованы электронными замками и системами доступа, которые позволяют клиентам управлять своими контейнерами удаленно через мобильные приложения или интернет-порталы.</span>
+            <p class="cost">1659₽</p>
+            <p>в месяц</p>
+            <span class="price">19 900 ₽/год</span>
+            <button class="btn">Купить год</button>
+          </div>
+          <div class="block">
+            <span>Полная</span>
+            <h3>Автоматизация склада</h3>
+            <span>Контейнеры оборудованы электронными замками и системами доступа, которые позволяют клиентам управлять своими контейнерами удаленно через мобильные приложения или интернет-порталы.</span>
+            <p class="cost">1659₽</p>
+            <p>в месяц</p>
+            <span class="price">19 900 ₽/год</span>
+            <button class="btn">Купить год</button>
+          </div>
+        </div>
       </div>
     </div>
 

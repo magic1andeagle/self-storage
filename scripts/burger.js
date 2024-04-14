@@ -4,6 +4,13 @@ const headerContainer = document.querySelector('div.header_container')
 const titleSlide = document.querySelector('div.first_slide_container')
 const logo = document.querySelector('img[alt="store_logo"]')
 
+const solutions = document.querySelector('div.four_slide_container')
+
+const anchor_aboutus = document.getElementById('about_us')
+const anchor_solution = document.getElementById('solutions')
+const anchor_products = document.getElementById('products')
+const anchor_how_it_works = document.getElementById('how_it_works')
+
 function getNodeFromChild(elem, nodeName){
     const node = document.createElement(nodeName)
     node.innerHTML = elem.innerHTML
@@ -47,16 +54,29 @@ function onResize(){
 }
 
 function onScroll(){
+    const headerHeight = headerContainer.clientHeight
     const titleSlideHeight = titleSlide.clientHeight
     const {scrollY} = window
+
     
-    if(scrollY > titleSlideHeight){
+    if(scrollY > (titleSlideHeight - (headerHeight / 2)) ){
         headerContainer.classList.add('scrolled')
         logo.src = "./assets/svg/logo_dark.svg"
     }else{
         headerContainer.classList.remove('scrolled')
         logo.src = "./assets/svg/store_logo.svg"   
     }
+
+    if(scrollY <= solutions.clientHeight){
+        anchor_aboutus.classList.add('active')
+        anchor_solution.classList.remove('active')
+    }else if(scrollY >= solutions.clientHeight){
+        anchor_aboutus.classList.remove('active')
+        anchor_solution.classList.add('active')
+    }else if(scrollY >= solutions.clientHeight){
+        anchor_solution.classList.remove('active')
+    }
+
 
 }
 

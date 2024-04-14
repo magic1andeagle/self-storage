@@ -13,6 +13,10 @@
     margin-bottom: 65px;
 }
 
+.third_slide_container .wrapper{
+    height: auto;
+}
+
 .third_slide_container .row{
     width: 100%;
 

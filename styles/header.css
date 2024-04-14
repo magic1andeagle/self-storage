@@ -12,7 +12,8 @@
 }
 
 .header_container.scrolled,
-.header_container.scrolled header ul li{
+.header_container.scrolled header ul li,
+.header_container.scrolled header ul li a{
   color: var(--sea-color);
 }
 
@@ -53,6 +54,11 @@ header ul{
 
 header ul li{
   list-style: none;
+  color: var(--light-color);
+}
+
+header ul li a{
+  text-decoration: none;
   color: var(--light-color);
 }
 

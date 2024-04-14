@@ -4,6 +4,7 @@
 
 .four_slide_container h2{
     margin-bottom: 65px;
+    color: var(--sea-color);
 }
 .four_slide_container .row{
     display: flex;
@@ -50,6 +51,7 @@
 .four_slide_container .card span{
     font-size: 19px;
     width: 383px;
+    text-align: right;
 }
 
 .four_slide_container .row .card.active .btns{
