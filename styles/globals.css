@@ -4,6 +4,7 @@
   --sea-color: #2954b1;
   --light-color: #ffffff;
   --dark-color: #000000;
+  --disable-color: #929292;
 
   --font-thin: 'Circe Thin';
   --font-ligth: 'Circe Light';
@@ -71,9 +72,33 @@ button{
   transform: scale(0.99);
 }
 
+h2{
+  font-family: var(--font-bold);
+  font-size: 60px;
+}
+
+h3{
+  font-family: var(--font-bold);
+  font-size: 40px;
+}
+
+span{
+  font-family: var(--font-regular);
+  font-size: 30px;
+}
+
 @media screen and (max-width: 1440px) {
   .wrapper{
     width: 1030px;
+  }
+  h2{
+    font-size: 50px;
+  }
+  span{
+    font-size: 25px;
+  }
+  h3{
+    font-size: 30px;
   }
 }
 
@@ -81,16 +106,43 @@ button{
   .wrapper{
     width: 952px;
   }
+  h2{
+    font-size: 40px;
+  }
+  span{
+    font-size: 22px;
+  }
+  h3{
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .wrapper{
     width: 738px;
   }
+  h2{
+    font-size: 28px;
+  }
+  span{
+    font-size: 16px;
+  }
+  h3{
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 540px) {
   .wrapper{
     width: 335px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  span{
+    font-size: 11px;
+  }
+  h3{
+    font-size: 13px;
   }
 }

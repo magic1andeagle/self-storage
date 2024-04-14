@@ -1,6 +1,8 @@
 const BURGER_WIDTH = 540
 const burgerBtn = document.getElementById('burger_btn')
-
+const headerContainer = document.querySelector('div.header_container')
+const titleSlide = document.querySelector('div.first_slide_container')
+const logo = document.querySelector('img[alt="store_logo"]')
 
 function getNodeFromChild(elem, nodeName){
     const node = document.createElement(nodeName)
@@ -44,5 +46,22 @@ function onResize(){
     }
 }
 
+function onScroll(){
+    const titleSlideHeight = titleSlide.clientHeight
+    const {scrollY} = window
+    
+    if(scrollY > titleSlideHeight){
+        headerContainer.classList.add('scrolled')
+        logo.src = "./assets/svg/logo_dark.svg"
+    }else{
+        headerContainer.classList.remove('scrolled')
+        logo.src = "./assets/svg/store_logo.svg"   
+    }
+
+}
+
 window.addEventListener('resize', onResize)
 onResize()
+
+window.addEventListener('scroll', onScroll)
+onScroll()
