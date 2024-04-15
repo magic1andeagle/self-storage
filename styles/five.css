@@ -220,6 +220,10 @@
   .five_slide_container .services table{
     width: 900px;
   }
+  .five_slide_container .row{
+    gap: 20px;
+    overflow-x: auto;
+  }
 }
 
 @media screen and (max-width: 1000px) {
