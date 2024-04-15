@@ -99,7 +99,9 @@
         width: 249px;
         height: 321px;
     }
-    .four_slide_container .card.active{
+
+
+    .four_slide_container .row .card.active{  
         width: 498px;
         height: 321px;
     }
