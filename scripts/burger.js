@@ -70,22 +70,22 @@ function clearActiveStyle(childs, idx) {
 }
 
 function onScroll(){
-    const headerHeight = headerContainer.clientHeight
-    const titleSlideHeight = titleSlide.clientHeight
+    // const headerHeight = headerContainer.clientHeight
+    // const titleSlideHeight = titleSlide.clientHeight
     const {scrollY} = window
 
     
-    if(scrollY > (titleSlideHeight - (headerHeight / 2)) ){
-        window.innerWidth >= BURGER_WIDTH && headerContainer.classList.add('scrolled')
-        if(!logo.src.includes(DARK_LOGO_PATH)){
-            logo.src =`./assets/svg/${DARK_LOGO_PATH}` 
-        }
-    }else{
-        headerContainer.classList.remove('scrolled')
-        if(!logo.src.includes(DEFAULT_LOGO_PATH)){
-            logo.src = `./assets/svg/${DEFAULT_LOGO_PATH}`   
-        }
-    }
+    // if(scrollY > (titleSlideHeight - (headerHeight / 2)) ){
+    //     window.innerWidth >= BURGER_WIDTH && headerContainer.classList.add('scrolled')
+    //     if(!logo.src.includes(DARK_LOGO_PATH)){
+    //         logo.src =`./assets/svg/${DARK_LOGO_PATH}` 
+    //     }
+    // }else{
+    //     headerContainer.classList.remove('scrolled')
+    //     if(!logo.src.includes(DEFAULT_LOGO_PATH)){
+    //         logo.src = `./assets/svg/${DEFAULT_LOGO_PATH}`   
+    //     }
+    // }
 
     const about = anchor_about_us.offsetTop
     const sol = anchor_solution.offsetTop

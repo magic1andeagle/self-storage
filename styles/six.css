@@ -178,7 +178,8 @@
 
 .six_slide_container .row.third_blocks .block .right_side img{
     width: 100%;
-    object-fit: fill;
+    height: 100%;
+    object-fit: cover;
 }
 
 .six_slide_container .block .price{
