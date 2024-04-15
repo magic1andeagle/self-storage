@@ -85,8 +85,6 @@ function onScroll(){
 
     const list = document.querySelector('header > ul')
 
-    console.log(scrollY - 300, how)
-
     if(scrollY < about){
         clearActiveStyle(Array.from(list.children))
     }else if(scrollY + 100 > about && scrollY + 100 < sol){
@@ -98,9 +96,6 @@ function onScroll(){
     }else if(scrollY + 300 > how){
         clearActiveStyle(Array.from(list.children), 3)
     }
-
-
-
 }
 
 
