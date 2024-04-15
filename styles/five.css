@@ -212,3 +212,32 @@
         width: 466px;
     }
 }
+
+
+@media screen and (max-width: 768px ) {
+    .five_slide_container h2{
+        margin-bottom: 20px;
+    }
+
+    .five_slide_container{
+        margin-top: 65px;
+    }
+    .five_slide_container .block{
+        width: 344px;
+    }
+}
+
+@media screen and (max-width: 540px ) {
+    .five_slide_container h2{
+        margin-bottom: 20px;
+    }
+
+    .five_slide_container{
+        margin-top: 65px;
+    }
+    .five_slide_container .row{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -110,7 +110,7 @@
         width: 230px;
         height: 296px;
     }
-    .four_slide_container .card.active{
+    .four_slide_container .row .card.active{
         width: 460px;
         height: 296px;
     }
@@ -122,8 +122,14 @@
         width: 177px;
         height: 229px;
     }
-    .four_slide_container .card.active{
+    .four_slide_container .row .card.active{
         width: 357px;
         height: 229px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .four_slide_container{
+        margin-top: 55px;
     }
 }

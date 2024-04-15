@@ -14,6 +14,9 @@
 }
 
 .eight_slide_container .row::after{
+
+    pointer-events: none;
+
     content: "";
     width: 100%;
     height: 100%;
@@ -125,4 +128,34 @@ input{
 
 .eight_slide_container .btn{
     font-size: 20px;
+}
+
+
+@media screen and (max-width: 540px) {
+
+
+    .eight_slide_container .left_side{
+        display: none;
+    }
+
+    .eight_slide_container .right_side{
+        padding: 10px 20px;
+    }
+
+    .eight_slide_container{
+        height: auto;
+      }
+    
+      .eight_slide_container h3{
+        font-size: 19px;
+      }
+      .eight_slide_container .row{
+        margin-top: 15px !important;
+        padding: 0 !important;
+        height: 100% !important;
+      }
+      .eight_slide_container h3{
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+      }
 }
