@@ -65,6 +65,27 @@
   margin-bottom: 25px;
 }
 
+.consult_modal_form .input-group input {
+  width: 344px;
+  border-radius: 10px 0 10px 10px;
+}
+
+.consult_modal_form .input-group .line {
+  display: none;
+}
+
+.sendButton_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sendButton_container .btn {
+  width: 241px;
+  height: 65px;
+  border-radius: 8px;
+}
+
 .consult_modal_form .btn {
   width: 241px;
   height: 65px;
@@ -73,16 +94,25 @@
 }
 
 .consult_modal_caption {
-  font-size: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
   color: var(--sea-color);
+  margin-bottom: 26px;
+  margin-top: 32px;
 }
 
 .consult_modal_caption p {
+  width: 328px;
+  font-size: 12px;
+}
+
+.consult_modal_caption_underlined {
+  font-size: 12px;
   text-decoration: underline;
 }
 
-
-.notifications_window{
+.notifications_window {
   width: 100%;
   height: 100vh;
 
@@ -101,7 +131,7 @@
   pointer-events: none;
 }
 
-.notifications_window div{
+.notifications_window div {
   width: 505px;
   min-height: 55px;
   display: flex;
@@ -118,10 +148,281 @@
   font-size: 18px;
 }
 
-.notifications_window .success{
+.notifications_window .success {
   background: var(--success-color);
 }
 
-.notifications_window .error{
+.notifications_window .error {
   background: var(--error-color);
+}
+
+@media screen and (max-width: 1440px) {
+  #cancelButton {
+    width: 30px;
+    height: 30px;
+  }
+
+  #cancelButton img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .consult_modal_container {
+    height: 517px;
+  }
+
+  .consult_modal_img img {
+    width: 338px;
+    height: 286px;
+  }
+
+  .consult_modal_form h3 {
+    margin-bottom: 0px;
+  }
+
+  .consult_modal_form .input-group {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 63px;
+  }
+
+  .consult_modal_form .input-group input {
+    width: 295px;
+  }
+
+  .consult_modal_form .input-group .line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #cancelButton {
+    width: 33px;
+    height: 33px;
+  }
+
+  #cancelButton img {
+    width: 33px;
+    height: 33px;
+  }
+
+  .consult_modal_container {
+    width: 769px;
+    height: 463px;
+
+    padding: 58px 50px;
+  }
+
+  .consult_modal_form {
+    width: 350px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .consult_modal_form h3 {
+    width: 350px;
+    height: 47px;
+    font-size: 32px;
+  }
+
+  .consult_modal_img img {
+    width: 327px;
+    height: 277px;
+  }
+
+  .consult_modal_form .input-group input {
+    width: 277px;
+    height: 60px;
+  }
+
+  .consult_modal_form .input-group .line {
+    display: none;
+  }
+
+  .consult_modal_caption {
+    margin-top: 25px;
+    margin-bottom: 23px;
+  }
+
+  .consult_modal_caption p {
+    font-size: 10px;
+  }
+
+  .consult_modal_caption p span {
+    font-size: 10px;
+  }
+
+  .sendButton_container .btn {
+    width: 194px;
+    height: 52px;
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #cancelButton {
+    width: 25px;
+    height: 25px;
+  }
+
+  #cancelButton img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .consult_modal_container {
+    width: 528px;
+    height: 350px;
+
+    padding: 44px 38px;
+  }
+
+  .consult_modal_form {
+    width: 265px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .consult_modal_form h3 {
+    width: 265px;
+    height: 36px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .consult_modal_img img {
+    width: 247px;
+    height: 209px;
+  }
+
+  .consult_modal_form .input-group {
+    margin: 0px 0px;
+  }
+
+  .consult_modal_form .input-group input {
+    width: 210px;
+    height: 46px;
+  }
+
+  .consult_modal_form .input-group .line {
+    display: none;
+  }
+
+  .consult_modal_caption {
+    width: 220px;
+    margin-top: 9px;
+    margin-bottom: 18px;
+  }
+
+  .consult_modal_caption p {
+    font-size: 8px;
+  }
+
+  .consult_modal_caption p span {
+    font-size: 8px;
+  }
+
+  .sendButton_container .btn {
+    width: 147px;
+    height: 39px;
+    padding: 9px 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #cancelButton {
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    left: 10px;
+  }
+
+  #cancelButton img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .consult_modal_container {
+    align-items: flex-start;
+    width: 267px;
+    height: 411px;
+
+    padding: 42px 22px;
+  }
+
+  .consult_modal_form {
+    width: 100%;
+
+    align-items: flex-start;
+    text-align: start;
+    justify-content: flex-end;
+    z-index: 3;
+  }
+
+  .consult_modal_form h3 {
+    width: 123px;
+    height: 50px;
+    line-height: 20px;
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .consult_modal_img {
+    height: 0px;
+    position: relative;
+  }
+
+  .consult_modal_img img {
+    position: absolute;
+    top: 170px;
+    left: 15px;
+
+    width: 230px;
+    height: 189px;
+    opacity: 0.3;
+    z-index: 2;
+  }
+
+  .consult_modal_form .input-group {
+    justify-content: flex-start;
+    margin: 0px 0px;
+  }
+
+  .consult_modal_form .input-group input {
+    width: 191px;
+    height: 42px;
+    border-radius: 0px 10px 10px 10px;
+  }
+
+  .consult_modal_form .input-group .line {
+    display: none;
+  }
+
+  .consult_modal_caption {
+    width: 220px;
+    margin-top: 0px;
+    margin-bottom: 18px;
+  }
+
+  .consult_modal_caption p {
+    font-size: 8px;
+  }
+
+  .consult_modal_caption p span {
+    font-size: 8px;
+  }
+
+  .sendButton_container {
+    justify-content: flex-start;
+  }
+
+  .sendButton_container .btn {
+    width: 108px;
+    height: 29px;
+    padding: 5px 8px;
+    font-size: 11px;
+  }
 }
