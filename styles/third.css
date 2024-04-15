@@ -77,14 +77,31 @@
 
 @media screen and (max-width: 1000px){
 
-    .third_slide_container .wrapper{
-        width: 100%;
-    }
-
     .third_slide_container .row{
         gap: 0px;
     }
     .third_slide_container .block{
         width: 50%;
+    }
+
+    .third_slide_container{
+        margin-top: 30px;
+    }
+    .third_slide_container h2{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .third_slide_container .block h3{
+        font-size: 13px;
+    }   
+
+    .third_slide_container .block span{
+        font-size: 11px;
+    }
+
+    .third_slide_container{
+        height: auto;
     }
 }

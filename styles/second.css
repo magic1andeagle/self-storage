@@ -102,4 +102,17 @@
         width: 336px;
         gap: 5px;
     }
+
+    .second_slide_container{
+        height: auto;
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+
+    .second_slide_container .left_side{
+        height: auto;
+    }
+    .second_slide_container .right_side{
+        height: auto;
+    }
 }

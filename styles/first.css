@@ -131,6 +131,27 @@
     padding: 5px 13px;
 }
 
+.btn.alt{
+    background: var(--light-color);
+    color: var(--sea-color);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.first_slide .left_side div button.alt{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn.alt img{
+    height:48px;
+}
+
 @media screen and (max-width: 1440px) {
     
     .first_slide_container{
@@ -224,8 +245,14 @@
 }
 
 @media screen and (max-width: 768px) {
-    .first_slide_container{
-        height: 543px;
+
+    .first_slide .left_side div button.alt{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btn.alt img{
+        height:28px;
     }
 
     .first_slide .right_side{
@@ -366,25 +393,29 @@
 @media screen and (max-width: 700px){
 
     .first_slide{
+        justify-content: unset;
         position: relative;
     }
 
     .first_slide .left_side{
         width: 340px;
     }
-    .first_slide .right_side{
-        width: 105px;
-        height: auto;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
 
+    
     .first_slide .right_side .itteractive_block img{
         transform: scaleX(-1);
     }
 
     .first_slide .right_side .itteractive_block .reservation_block{
         display: none;
+    }
+
+    
+    .first_slide_container{
+        height: 538px;
+    }
+
+    .first_slide{
+        margin-top: 30px;
     }
 }

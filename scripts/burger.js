@@ -76,7 +76,7 @@ function onScroll(){
 
     
     if(scrollY > (titleSlideHeight - (headerHeight / 2)) ){
-        headerContainer.classList.add('scrolled')
+        window.clientWidth >= BURGER_WIDTH && headerContainer.classList.add('scrolled')
         if(!logo.src.includes(DARK_LOGO_PATH)){
             logo.src =`./assets/svg/${DARK_LOGO_PATH}` 
         }

@@ -292,6 +292,38 @@
     .six_slide_container .row.third_blocks .block .left_side h3 {
         font-size: 31px;
     }
+    .six_slide_container .row .block{
+        width: 446px;
+        height: 297px;
+    }
+    .six_slide_container .row .block:last-child .left_side{
+        padding: 15px;
+    }
+    .six_slide_container .row .block:first-child .right_side{
+        padding: 15px;
+    }
+
+    .six_slide_container .row .block .right_side img, .six_slide_container .row .block .left_side img{
+        width: 181px;
+    }
+
+    .six_slide_container .row .block span{
+        font-size: 17px;
+    }
+
+    .six_slide_container .row .block{
+        min-height: min-content;
+        height: 295px;
+    }
+
+    .six_slide_container .row.third_blocks .block {
+        min-height: min-content;
+        height: 368px;
+    }
+
+    .six_slide_container .row.third_blocks .btn{
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -323,6 +355,24 @@
         border-radius: 7px;
     }
 
+    .six_slide_container {
+        margin-top: 65px;
+    }
+
+    .six_slide_container .row.third_blocks .block{
+        min-height: 330px;
+    }
+
+    .six_slide_container .row.third_blocks .block .left_side {
+        height: 100%;
+    }
+
+    .six_slide_container .row.third_blocks .btn{
+        z-index: 2;
+    }
+
+
+
 }
 
 @media screen and (max-width: 540px) {
@@ -341,5 +391,28 @@
     }
     .six_slide_container .row.third_blocks .block{
         height: 287px;
+    }
+
+    .six_slide_container .row:not(.third_blocks ){
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .six_slide_container .row.row.third_blocks{
+        width: 100%;
+    }
+
+    .six_slide_container .row .block{
+        width: 100%;
+    }
+    .six_slide_container .row .block .right_side, .six_slide_container .row .block .left_side{
+        width: 220px;
+    }
+    .six_slide_container .row .block h3{
+        font-size: 22px;
+    }
+
+    .six_slide_container .row .block span{
+        font-size: 13px;
     }
 }
