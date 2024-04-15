@@ -1,4 +1,9 @@
+
 const BURGER_WIDTH = 540
+const DARK_LOGO_PATH = "logo_dark.svg"   
+const DEFAULT_LOGO_PATH = "store_logo.svg"   
+
+
 const burgerBtn = document.getElementById('burger_btn')
 const headerContainer = document.querySelector('div.header_container')
 const titleSlide = document.querySelector('div.first_slide_container')
@@ -72,10 +77,14 @@ function onScroll(){
     
     if(scrollY > (titleSlideHeight - (headerHeight / 2)) ){
         headerContainer.classList.add('scrolled')
-        logo.src = "./assets/svg/logo_dark.svg"
+        if(!logo.src.includes(DARK_LOGO_PATH)){
+            logo.src =`./assets/svg/${DARK_LOGO_PATH}` 
+        }
     }else{
         headerContainer.classList.remove('scrolled')
-        logo.src = "./assets/svg/store_logo.svg"   
+        if(!logo.src.includes(DEFAULT_LOGO_PATH)){
+            logo.src = `./assets/svg/${DEFAULT_LOGO_PATH}`   
+        }
     }
 
     const about = anchor_about_us.offsetTop

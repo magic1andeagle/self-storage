@@ -13,6 +13,9 @@
     margin:32px 0;
 }
 
+.six_slide_container{
+    margin-top: 150px;
+}
 
 .six_slide_container .category_title p{
     width: max-content;

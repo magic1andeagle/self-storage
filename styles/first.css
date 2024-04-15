@@ -84,6 +84,15 @@
     position: absolute;
     top: -85px;
     right: 50px;
+    transition: 0.15s all;
+}
+
+.first_slide .right_side .reservation_block:hover{
+    transform: scale(1.02);
+}
+
+.first_slide .right_side .reservation_block:active{
+    transform: scale(0.99);
 }
 
 .first_slide .right_side .reservation_block:first-child{

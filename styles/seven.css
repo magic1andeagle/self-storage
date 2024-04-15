@@ -3,11 +3,21 @@
     margin-bottom: 60px;
 }
 
+.seven_slide_container{
+    margin-top: 150px;
+}
+
+
+.seven_slide_container h2{
+    margin-bottom: 30px;
+}
+
 .seven_slide_container .row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 55px;
 }
 
 .seven_slide_container .card{
@@ -22,4 +32,66 @@
     justify-content: center;
 
     margin: 15px 0;
+}
+
+@media screen and (max-width: 1440px) {
+    .seven_slide_container .card{
+        width: 291px;
+        height: 143px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .seven_slide_container .card{
+        width: 281px;
+        height: 138px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .seven_slide_container{
+        margin-top: 30px;
+    }
+    .seven_slide_container span{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .seven_slide_container .row {
+        margin-top: 20px;
+    }
+
+    .seven_slide_container h2{
+        margin-bottom: 10px;
+    }
+
+    .seven_slide_container .card{
+        width: 217px;
+        height: 107px;
+        border-radius: 13px;
+        border-width: 1px;
+    }
+
+    .seven_slide_container .card img{
+        width: 137px;
+        height: 55px;
+        object-fit: contain;
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    .seven_slide_container .card{
+        width: 99px;
+        height: 49px;
+        border-radius: 5px;
+        border-width: 1px;
+    }
+
+    .seven_slide_container .card img{
+        width: 62px;
+        height: 30px;
+        object-fit: contain;
+    }
 }

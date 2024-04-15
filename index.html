@@ -19,6 +19,10 @@
     <title>Self-Storage</title>
   </head>
   <body>
+
+    <div class="notifications_window">
+    </div>
+
     <div id="consultModal">
       <div class="consult_modal_container">
         <div id="cancelButton">
@@ -29,8 +33,14 @@
         </div>
         <div class="consult_modal_form">
           <h3>Получить консультацию</h3>
-          <input id="nameInputModal" type="text" placeholder="Ваше имя" />
-          <input id="phoneInputModal" type="text" placeholder="Ваш телефон" />
+          <div class="input-group">
+            <input id="nameInputModal" type="text" placeholder="Ваше имя" />
+            <div class="line"></div>
+          </div>
+          <div class="input-group">
+            <input id="phoneInputModal" type="text" placeholder="Ваш телефон" />
+            <div class="line"></div>
+          </div>
           <div class="consult_modal_caption">
             Нажимая “Отправить” вы подтверждаете свое согласие на обработку и
             хранение ваших персональных данных в соответствии с
@@ -245,6 +255,7 @@
           </div>
         </div>
         <div class="services_container">
+          <button id="show_more">Показать ещё</button>
           <div class="services">
             <table>
               <thead>
@@ -617,10 +628,10 @@
     </div>
 
 
+    <script src="./scripts/modal.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="./scripts/burger.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="./scripts/main.js"></script>
-    <script src="./scripts/modal.js"></script>
   </body>
 </html>
