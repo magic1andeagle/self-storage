@@ -28,8 +28,8 @@
         </div>
         <div class="consult_modal_form">
           <h3>Получить консультацию</h3>
-          <input type="text" placeholder="Ваше имя" />
-          <input type="text" placeholder="Ваш телефон" />
+          <input id="nameInputModal" type="text" placeholder="Ваше имя" />
+          <input id="phoneInputModal" type="text" placeholder="Ваш телефон" />
           <div class="consult_modal_caption">
             Нажимая “Отправить” вы подтверждаете свое согласие на обработку и
             хранение ваших персональных данных в соответствии с
@@ -37,7 +37,7 @@
               политикой обработки персональных данных.
             </p>
           </div>
-          <button class="btn">Отправить запрос</button>
+          <button id="sendButton" class="btn">Отправить запрос</button>
         </div>
       </div>
     </div>
@@ -45,10 +45,7 @@
       <header>
         <div class="logo">
           <a href="#title">
-            <img
-              src="./assets/svg/store_logo.svg"
-              alt="store_logo"
-            />
+            <img src="./assets/svg/store_logo.svg" alt="store_logo" />
           </a>
         </div>
         <ul>
@@ -68,7 +65,11 @@
     </div>
 
     <div id="title" class="first_slide_container">
-      <img class="first_slide_bg" src="./assets/svg/first_slide_bg.svg" alt="background">
+      <img
+        class="first_slide_bg"
+        src="./assets/svg/first_slide_bg.svg"
+        alt="background"
+      />
       <div class="wrapper">
         <div class="first_slide">
           <div class="left_side">
@@ -393,7 +394,7 @@
       </div>
     </div>
 
-    <div  class="six_slide_container wrapper">
+    <div class="six_slide_container wrapper">
       <h2>Наша продукция</h2>
       <span
         >Современные системы безопасности и гибкие условия аренды делают эти
@@ -533,56 +534,68 @@
       <span>Узнайте подробнее о парнтнерах, с которыми мы работаем.</span>
       <div class="row">
         <div class="card">
-          <img src="./assets/svg/partners/Google_logo 1.png" alt="google.com">
+          <img src="./assets/svg/partners/Google_logo 1.png" alt="google.com" />
         </div>
         <div class="card">
-          <img src="./assets/svg/partners/Sony_logo 1.png" alt="sony.com">
+          <img src="./assets/svg/partners/Sony_logo 1.png" alt="sony.com" />
         </div>
         <div class="card">
-          <img src="./assets/svg/partners/IBM_logo 1.png" alt="ibm.com">
+          <img src="./assets/svg/partners/IBM_logo 1.png" alt="ibm.com" />
         </div>
         <div class="card">
-          <img src="./assets/svg/partners/Apple_logo_black 1.png" alt="apple.com">
+          <img
+            src="./assets/svg/partners/Apple_logo_black 1.png"
+            alt="apple.com"
+          />
         </div>
         <div class="card">
-          <img src="./assets/svg/partners/Microsoft_logo 1.png" alt="microsoft.com">
+          <img
+            src="./assets/svg/partners/Microsoft_logo 1.png"
+            alt="microsoft.com"
+          />
         </div>
         <div class="card">
-          <img src="./assets/svg/partners/Samsung 1.png" alt="samsung.com">
+          <img src="./assets/svg/partners/Samsung 1.png" alt="samsung.com" />
         </div>
       </div>
     </div>
 
     <div id="how_it_works" class="eight_slide_container wrapper">
       <h2>Связаться с нами</h2>
-      <span>Остались вопросы? Оставьте свои контакты, и мы свяжемся с вами</span>
+      <span
+        >Остались вопросы? Оставьте свои контакты, и мы свяжемся с вами</span
+      >
 
       <div class="row">
         <div class="left_side">
-          <img src="./assets/svg/vector_form.svg" alt="form">
+          <img src="./assets/svg/vector_form.svg" alt="form" />
         </div>
         <div class="right_side">
           <h3>Оставьте заявку:</h3>
           <div class="input-group">
-            <input id="name-input" placeholder="Ваше имя" type="text">
+            <input id="name-input" placeholder="Ваше имя" type="text" />
             <div class="line"></div>
           </div>
           <div class="input-group">
-            <input id="phone-input" placeholder="Ваш телефон" type="text">
+            <input id="phone-input" placeholder="Ваш телефон" type="text" />
             <div class="line"></div>
           </div>
-          <p>Нажимая “Отправить” вы подтверждаете свое согласие на обработку и хранение ваших персональных данных в соответствии с<a href="/politics">политикой обработки персональных данных</a>. </p>
+          <p>
+            Нажимая “Отправить” вы подтверждаете свое согласие на обработку и
+            хранение ваших персональных данных в соответствии с<a
+              href="/politics"
+              >политикой обработки персональных данных</a
+            >.
+          </p>
           <button id="send_req" class="btn">Отправить запрос</button>
         </div>
       </div>
     </div>
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="./scripts/burger.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="./scripts/main.js"></script>
-
-
+    <script src="./scripts/modal.js"></script>
   </body>
 </html>
