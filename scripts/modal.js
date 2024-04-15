@@ -41,12 +41,12 @@ function error(text){
 
 function openModal(){
   modal.style.display = "block";
-  document.body.style.overflow = "hidden"
+  document.body.style.overflowY = "hidden"
 }
 
 function hideModal(){
   modal.style.display = "none";
-  document.body.style.overflow = "auto"
+  document.body.style.overflowY = "scroll"
 }
 
 button.onclick = openModal

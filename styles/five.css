@@ -95,6 +95,7 @@
 }
 
 .five_slide_container .services{
+    width: 100%;
     position: relative;
     height: 705px;
 
