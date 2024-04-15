@@ -250,11 +250,9 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .btn.alt img{
         height:28px;
-    }
-    .first_slide_container{
-        height: 543px;
     }
 
     .first_slide .right_side{
@@ -410,5 +408,14 @@
 
     .first_slide .right_side .itteractive_block .reservation_block{
         display: none;
+    }
+
+    
+    .first_slide_container{
+        height: 538px;
+    }
+
+    .first_slide{
+        margin-top: 30px;
     }
 }
