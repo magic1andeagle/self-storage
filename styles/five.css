@@ -1,9 +1,9 @@
 .five_slide_container{
     width: 100%;
+    margin-top: 150px;
 }
 
 .five_slide_container h2{
-    margin-top: 150px;
     margin-bottom: 65px;
     color: var(--sea-color);
 }

@@ -1,0 +1,25 @@
+.seven_slide_container span{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.seven_slide_container .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.seven_slide_container .card{
+    width: 350px;
+    height: 172px;
+    border-radius: 17px;
+
+    border: 3px solid var(--sea-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 15px 0;
+}

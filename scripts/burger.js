@@ -6,11 +6,6 @@ const logo = document.querySelector('img[alt="store_logo"]')
 
 const solutions = document.querySelector('div.four_slide_container')
 
-const anchor_aboutus = document.getElementById('about_us')
-const anchor_solution = document.getElementById('solutions')
-const anchor_products = document.getElementById('products')
-const anchor_how_it_works = document.getElementById('how_it_works')
-
 function getNodeFromChild(elem, nodeName){
     const node = document.createElement(nodeName)
     node.innerHTML = elem.innerHTML
@@ -53,6 +48,22 @@ function onResize(){
     }
 }
 
+const anchor_title = document.getElementById('title')
+const anchor_about_us = document.getElementById('about_us')
+const anchor_solution = document.getElementById('solutions')
+const anchor_products = document.getElementById('products')
+const anchor_how_it = document.getElementById('how_it_works')
+
+function clearActiveStyle(childs, idx) {
+    childs.forEach((element, index) => {
+        if(index !== idx){
+            element.classList.remove('active')
+        }else{
+            element.classList.add('active')
+        }
+    });
+}
+
 function onScroll(){
     const headerHeight = headerContainer.clientHeight
     const titleSlideHeight = titleSlide.clientHeight
@@ -67,21 +78,37 @@ function onScroll(){
         logo.src = "./assets/svg/store_logo.svg"   
     }
 
-    if(scrollY <= solutions.clientHeight){
-        anchor_aboutus.classList.add('active')
-        anchor_solution.classList.remove('active')
-    }else if(scrollY >= solutions.clientHeight){
-        anchor_aboutus.classList.remove('active')
-        anchor_solution.classList.add('active')
-    }else if(scrollY >= solutions.clientHeight){
-        anchor_solution.classList.remove('active')
+    const about = anchor_about_us.offsetTop
+    const sol = anchor_solution.offsetTop
+    const prod = anchor_products.offsetTop
+    const how = anchor_how_it.offsetTop
+
+    const list = document.querySelector('header > ul')
+
+    console.log(scrollY - 300, how)
+
+    if(scrollY < about){
+        clearActiveStyle(Array.from(list.children))
+    }else if(scrollY + 100 > about && scrollY + 100 < sol){
+        clearActiveStyle(Array.from(list.children), 0)
+    }else if(scrollY + 100 > sol && scrollY + 100 < prod){
+        clearActiveStyle(Array.from(list.children), 1)
+    }else if(scrollY + 100 > prod && scrollY + 300 < how){
+        clearActiveStyle(Array.from(list.children), 2)
+    }else if(scrollY + 300 > how){
+        clearActiveStyle(Array.from(list.children), 3)
     }
+
 
 
 }
 
-window.addEventListener('resize', onResize)
-onResize()
 
-window.addEventListener('scroll', onScroll)
-onScroll()
+
+window.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('resize', onResize)
+    onResize()
+    
+    window.addEventListener('scroll', onScroll)
+    onScroll()
+})

@@ -41,10 +41,19 @@ body {
   overflow: hidden;
 }
 
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
 button{
   background: none;
   outline: none;
   border: none;
+}
+
+h2{
+  color: var(--sea-color);
 }
 
 .btn{
@@ -71,6 +80,19 @@ button{
 .btn:active{
   transform: scale(0.99);
 }
+
+.btn:disabled{
+  background: var(--disable-color);
+  box-shadow: none;
+}
+
+
+.btn:disabled:hover,
+.btn:disabled:active{
+  transform: scale(1);
+}
+
+
 
 h2{
   font-family: var(--font-bold);

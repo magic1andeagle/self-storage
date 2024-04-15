@@ -12,22 +12,26 @@
     <link rel="stylesheet" href="./styles/four.css" />
     <link rel="stylesheet" href="./styles/five.css" />
     <link rel="stylesheet" href="./styles/six.css" />
+    <link rel="stylesheet" href="./styles/seven.css" />
+    <link rel="stylesheet" href="./styles/eight.css" />
     <title>Self-Storage</title>
   </head>
   <body>
     <div class="header_container">
       <header>
         <div class="logo">
-          <img
-            src="./assets/svg/store_logo.svg"
-            alt="store_logo"
-          />
+          <a href="#title">
+            <img
+              src="./assets/svg/store_logo.svg"
+              alt="store_logo"
+            />
+          </a>
         </div>
         <ul>
           <li class="active"><a href="#about_us">О нас</a></li>
           <li><a href="#solutions">Наши решения</a></li>
-          <li id="products">Продукты</li>
-          <li id="how_it_works">Как это работает</li>
+          <li><a href="#products">Продукты</a></li>
+          <li><a href="#how_it_works">Как это работает</a></li>
         </ul>
         <div class="contacts">
           <img src="./assets/svg/phone.svg" alt="phone" />
@@ -42,7 +46,7 @@
       </header>
     </div>
 
-    <div class="first_slide_container">
+    <div id="title" class="first_slide_container">
       <img class="first_slide_bg" src="./assets/svg/first_slide_bg.svg" alt="background">
       <div class="wrapper">
         <div class="first_slide">
@@ -174,7 +178,7 @@
       </div>
     </div>
 
-    <div class="five_slide_container">
+    <div id="products" class="five_slide_container">
       <div class="wrapper">
         <h2>Наши продукты</h2>
         <div class="row">
@@ -295,7 +299,7 @@
       </div>
     </div>
 
-    <div class="six_slide_container wrapper">
+    <div  class="six_slide_container wrapper">
       <h2>Наша продукция</h2>
       <span>Современные системы безопасности и гибкие условия аренды делают эти контейнеры идеальным выбором для организации пространства и сохранения ценных вещей. Узнайте о них больше.</span>
 
@@ -421,6 +425,61 @@
 
     </div>
 
+    <div class="seven_slide_container wrapper">
+      <h2>Наши партнеры</h2>
+      <span>Узнайте подробнее о парнтнерах, с которыми мы работаем.</span>
+      <div class="row">
+        <div class="card">
+          <img src="./assets/svg/partners/Google_logo 1.png" alt="google.com">
+        </div>
+        <div class="card">
+          <img src="./assets/svg/partners/Sony_logo 1.png" alt="sony.com">
+        </div>
+        <div class="card">
+          <img src="./assets/svg/partners/IBM_logo 1.png" alt="ibm.com">
+        </div>
+        <div class="card">
+          <img src="./assets/svg/partners/Apple_logo_black 1.png" alt="apple.com">
+        </div>
+        <div class="card">
+          <img src="./assets/svg/partners/Microsoft_logo 1.png" alt="microsoft.com">
+        </div>
+        <div class="card">
+          <img src="./assets/svg/partners/Samsung 1.png" alt="samsung.com">
+        </div>
+      </div>
+    </div>
+
+    <div id="how_it_works" class="eight_slide_container wrapper">
+      <h2>Связаться с нами</h2>
+      <span>Остались вопросы? Оставьте свои контакты, и мы свяжемся с вами</span>
+
+      <div class="row">
+        <div class="left_side">
+          <img src="./assets/svg/vector_form.svg" alt="form">
+        </div>
+        <div class="right_side">
+          <h3>Оставьте заявку:</h3>
+          <div class="input-group">
+            <input id="name-input" placeholder="Ваше имя" type="text">
+            <div class="line"></div>
+          </div>
+          <div class="input-group">
+            <input id="phone-input" placeholder="Ваш телефон" type="text">
+            <div class="line"></div>
+          </div>
+          <p>Нажимая “Отправить” вы подтверждаете свое согласие на обработку и хранение ваших персональных данных в соответствии с<a href="/politics">политикой обработки персональных данных</a>. </p>
+          <button id="send_req" class="btn">Отправить запрос</button>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="./scripts/burger.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./scripts/main.js"></script>
+
+
   </body>
 </html>
