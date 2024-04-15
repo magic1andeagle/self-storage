@@ -62,6 +62,8 @@
     background: var(--light-color);
     margin-top: 50px;
     margin-bottom: 50px;
+    border-radius: 15px;
+
 }
 
 .five_slide_container .services{
@@ -93,6 +95,7 @@
     position: absolute;
 
     background: var(--sea-color);
+
 }
 
 .five_slide_container .services thead{
