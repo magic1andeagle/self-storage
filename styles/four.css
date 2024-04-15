@@ -132,4 +132,35 @@
     .four_slide_container{
         margin-top: 55px;
     }
+
+    .four_slide_container h2{
+        margin-bottom: 15px;
+    }
+
+    .four_slide_container .row{
+        flex-wrap: wrap;
+    }
+
+    .four_slide_container .card{
+        width: 158px;
+        height: 205px;
+    }
+    .four_slide_container .card.active{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .four_slide_container .row .card.active span{
+        width: 80%;
+        font-size: 12px;
+    }
+    .four_slide_container .row .card h3{
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .four_slide_container .btn{
+        font-size: 12px;
+        margin-top: 15px;
+    }
 }

@@ -367,6 +367,10 @@
         height: 100%;
     }
 
+    .six_slide_container .row.third_blocks .btn{
+        z-index: 2;
+    }
+
 
 
 }
