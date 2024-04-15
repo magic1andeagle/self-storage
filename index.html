@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/first.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
     <link rel="stylesheet" href="./styles/second.css" />
     <link rel="stylesheet" href="./styles/third.css" />
     <link rel="stylesheet" href="./styles/four.css" />
@@ -15,13 +16,33 @@
     <title>Self-Storage</title>
   </head>
   <body>
+    <div id="consultModal">
+      <div class="consult_modal_container">
+        <div id="cancelButton">
+          <img src="./assets/svg/cancel.svg" alt="cancel" />
+        </div>
+        <div class="consult_modal_img">
+          <img src="./assets/svg/modal_support.svg" alt="modal_support" />
+        </div>
+        <div class="consult_modal_form">
+          <h3>Получить консультацию</h3>
+          <input type="text" placeholder="Ваше имя" />
+          <input type="text" placeholder="Ваш телефон" />
+          <div class="consult_modal_caption">
+            Нажимая “Отправить” вы подтверждаете свое согласие на обработку и
+            хранение ваших персональных данных в соответствии с
+            <p class="consult_modal_caption_underlined">
+              политикой обработки персональных данных.
+            </p>
+          </div>
+          <button class="btn">Отправить запрос</button>
+        </div>
+      </div>
+    </div>
     <div class="header_container">
       <header>
         <div class="logo">
-          <img
-            src="./assets/svg/store_logo.svg"
-            alt="store_logo"
-          />
+          <img src="./assets/svg/store_logo.svg" alt="store_logo" />
         </div>
         <ul>
           <li class="active"><a href="#about_us">О нас</a></li>
@@ -34,24 +55,28 @@
           <span>8 800 899 99 99</span>
         </div>
         <button id="burger_btn">
-          <img
-            src="./assets/svg/hamburger.svg"
-            alt="hamburger_lines"
-          />
+          <img src="./assets/svg/hamburger.svg" alt="hamburger_lines" />
         </button>
       </header>
     </div>
 
     <div class="first_slide_container">
-      <img class="first_slide_bg" src="./assets/svg/first_slide_bg.svg" alt="background">
+      <img
+        class="first_slide_bg"
+        src="./assets/svg/first_slide_bg.svg"
+        alt="background"
+      />
       <div class="wrapper">
         <div class="first_slide">
           <div class="left_side">
             <p>Воспользуйтесь</p>
             <h1>Self Storage</h1>
-            <span>Удобное и надежное решение для хранения ваших личных вещей, обеспечивая просторное пространство и гибкую аренду.</span>
+            <span
+              >Удобное и надежное решение для хранения ваших личных вещей,
+              обеспечивая просторное пространство и гибкую аренду.</span
+            >
             <div class="btns">
-              <button class="btn">Консультация</button>
+              <button id="toggleModal" class="btn">Консультация</button>
               <button class="btn">Демо-версия</button>
             </div>
           </div>
@@ -63,18 +88,18 @@
                   <b>легко и просто!</b>
                   <span>Узнайте больше о том, как это сделать</span>
                   <button>
-                    <img src="./assets/svg/arrow_right.svg" alt="arrow">
+                    <img src="./assets/svg/arrow_right.svg" alt="arrow" />
                   </button>
                 </div>
               </div>
-              <img src="./assets/svg/first_slide_phone.svg" alt="phone">
+              <img src="./assets/svg/first_slide_phone.svg" alt="phone" />
               <div class="reservation_block">
                 <h3>Узнайте больше</h3>
                 <div>
                   <b>о нашей продукции</b>
                   <span>Узнайте больше о том, о нашей продукции</span>
                   <button>
-                    <img src="./assets/svg/arrow_right.svg" alt="arrow">
+                    <img src="./assets/svg/arrow_right.svg" alt="arrow" />
                   </button>
                 </div>
               </div>
@@ -87,11 +112,17 @@
     <div id="about_us" class="second_slide_container">
       <div class="wrapper">
         <div class="left_side">
-          <img src="./assets/svg/second_slide_employee.svg" alt="employee">
+          <img src="./assets/svg/second_slide_employee.svg" alt="employee" />
         </div>
         <div class="right_side">
           <h2>О нас</h2>
-          <span>Контейнеры хранения Self Storage предоставляют удобное и безопасное решение для хранения различных вещей, от мебели до сезонных предметов. Современные системы безопасности и гибкие условия аренды делают эти контейнеры идеальным выбором для организации пространства и сохранения ценных вещей.</span>
+          <span
+            >Контейнеры хранения Self Storage предоставляют удобное и безопасное
+            решение для хранения различных вещей, от мебели до сезонных
+            предметов. Современные системы безопасности и гибкие условия аренды
+            делают эти контейнеры идеальным выбором для организации пространства
+            и сохранения ценных вещей.</span
+          >
         </div>
       </div>
     </div>
@@ -100,29 +131,29 @@
       <div class="wrapper">
         <h2>Проблемы, которые мы решаем</h2>
         <div class="row">
-            <div class="block">
-              <h3>Проблема</h3>
-              <span>Способ решения проблемы. Способ решения проблемы</span>
-            </div>
-            <div class="block">
-              <h3>Проблема</h3>
-              <span>Способ решения проблемы. Способ решения проблемы</span>
-            </div>
-            <div class="block">
-              <h3>Проблема</h3>
-              <span>Способ решения проблемы. Способ решения проблемы</span>
-            </div>
-            <div class="block">
-              <h3>Проблема</h3>
-              <span>Способ решения проблемы. Способ решения проблемы</span>
-            </div>
-            <div class="block">
-              <h3>Проблема</h3>
-              <span>Способ решения проблемы. Способ решения проблемы</span>
-            </div>
-            <div class="block">
-              <h3>Проблема</h3>
-              <span>Способ решения проблемы. Способ решения проблемы</span>
+          <div class="block">
+            <h3>Проблема</h3>
+            <span>Способ решения проблемы. Способ решения проблемы</span>
+          </div>
+          <div class="block">
+            <h3>Проблема</h3>
+            <span>Способ решения проблемы. Способ решения проблемы</span>
+          </div>
+          <div class="block">
+            <h3>Проблема</h3>
+            <span>Способ решения проблемы. Способ решения проблемы</span>
+          </div>
+          <div class="block">
+            <h3>Проблема</h3>
+            <span>Способ решения проблемы. Способ решения проблемы</span>
+          </div>
+          <div class="block">
+            <h3>Проблема</h3>
+            <span>Способ решения проблемы. Способ решения проблемы</span>
+          </div>
+          <div class="block">
+            <h3>Проблема</h3>
+            <span>Способ решения проблемы. Способ решения проблемы</span>
           </div>
           <div class="block">
             <h3>Проблема</h3>
@@ -134,7 +165,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <div class="four_slide_container" id="solutions">
@@ -147,7 +177,7 @@
               <button>2</button>
               <button>3</button>
             </div>
-            <img src="./assets/svg/four/Rectangle 97.png" alt="">
+            <img src="./assets/svg/four/Rectangle 97.png" alt="" />
             <h3>Клиент бронирует ячейку в телефоне</h3>
           </div>
           <div class="card">
@@ -156,7 +186,7 @@
               <button>2</button>
               <button>3</button>
             </div>
-            <img src="./assets/svg/four/Rectangle 98.png" alt="">
+            <img src="./assets/svg/four/Rectangle 98.png" alt="" />
 
             <h3>Сразу производит оплату</h3>
           </div>
@@ -166,8 +196,12 @@
               <button>2</button>
               <button>3</button>
             </div>
-            <img src="./assets/svg/four/Group 64.png" alt="">
-            <span>Электронные замки позволяют клиенту открывать ячейку 24/7 напрямую при помощи телефона, для пользователей, плохо владеющих телефоном предусмотрена кодовая PRDIF панель</span>
+            <img src="./assets/svg/four/Group 64.png" alt="" />
+            <span
+              >Электронные замки позволяют клиенту открывать ячейку 24/7
+              напрямую при помощи телефона, для пользователей, плохо владеющих
+              телефоном предусмотрена кодовая PRDIF панель</span
+            >
           </div>
         </div>
         <button class="btn">Демо-версия</button>
@@ -181,7 +215,11 @@
           <div class="block">
             <span>Полная</span>
             <h3>Автоматизация склада</h3>
-            <span>Контейнеры оборудованы электронными замками и системами доступа, которые позволяют клиентам управлять своими контейнерами удаленно через мобильные приложения или интернет-порталы.</span>
+            <span
+              >Контейнеры оборудованы электронными замками и системами доступа,
+              которые позволяют клиентам управлять своими контейнерами удаленно
+              через мобильные приложения или интернет-порталы.</span
+            >
             <p class="cost">1659₽</p>
             <p>в месяц</p>
             <span class="price">19 900 ₽/год</span>
@@ -190,7 +228,11 @@
           <div class="block">
             <span>Полная</span>
             <h3>Автоматизация склада</h3>
-            <span>Контейнеры оборудованы электронными замками и системами доступа, которые позволяют клиентам управлять своими контейнерами удаленно через мобильные приложения или интернет-порталы.</span>
+            <span
+              >Контейнеры оборудованы электронными замками и системами доступа,
+              которые позволяют клиентам управлять своими контейнерами удаленно
+              через мобильные приложения или интернет-порталы.</span
+            >
             <p class="cost">1659₽</p>
             <p>в месяц</p>
             <span class="price">19 900 ₽/год</span>
@@ -210,13 +252,21 @@
               <tbody>
                 <tr>
                   <td>Бронирование ячеек и заключение договора на сайте</td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
                 </tr>
                 <tr>
                   <td>Онлайн оплата и подписка на услуги</td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
                 </tr>
                 <tr>
                   <td>Доступ на склад 24/7</td>
@@ -230,63 +280,108 @@
                 </tr>
                 <tr>
                   <td>Аналитика по клиентам</td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
+                  >
                 </tr>
                 <tr>
                   <td>Панель администратора</td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
                 </tr>
                 <tr>
                   <td>Безопасная авторизация через СМС</td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
                 </tr>
                 <tr>
                   <td>Совместимость со всем оборудованием Store</td>
                   <td></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
                 </tr>
                 <tr>
                   <td>Обработка персональных данный в согласии с 152 ФЗ</td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
                 </tr>
                 <tr>
                   <td>Калькулятор стоимости бокса на сайте</td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
                 </tr>
                 <tr>
-                  <td>Возможность блокировки ячейки в случае просрочки оплаты</td>
+                  <td>
+                    Возможность блокировки ячейки в случае просрочки оплаты
+                  </td>
                   <td></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
                 </tr>
                 <tr>
                   <td>Интеграция с CRM системами</td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
                 </tr>
                 <tr>
                   <td>Расширенная аналитика по клиентам</td>
                   <td></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
                 </tr>
                 <tr>
-                  <td>Автоматическое уведомление клиентов о необходимсоти оплаты</td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
+                  <td>
+                    Автоматическое уведомление клиентов о необходимсоти оплаты
+                  </td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
                 </tr>
                 <tr>
                   <td>Автоматическа проверка паспорта</td>
                   <td></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
                 </tr>
                 <tr>
                   <td>Работа с электронными замками</td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
-                  <td><img src="./assets/svg/access_icon.svg" alt="access_icon" /></td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
+                  <td>
+                    <img src="./assets/svg/access_icon.svg" alt="access_icon" />
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -297,7 +392,11 @@
 
     <div class="six_slide_container wrapper">
       <h2>Наша продукция</h2>
-      <span>Современные системы безопасности и гибкие условия аренды делают эти контейнеры идеальным выбором для организации пространства и сохранения ценных вещей. Узнайте о них больше.</span>
+      <span
+        >Современные системы безопасности и гибкие условия аренды делают эти
+        контейнеры идеальным выбором для организации пространства и сохранения
+        ценных вещей. Узнайте о них больше.</span
+      >
 
       <div class="category_title">
         <p>Наша продукция</p>
@@ -307,11 +406,14 @@
       <div class="row">
         <div class="block">
           <div class="left_side">
-            <img src="./assets/svg/our_products_1.png" alt="zamok_1">
+            <img src="./assets/svg/our_products_1.png" alt="zamok_1" />
           </div>
           <div class="right_side">
             <h3>SecureGuard Locks</h3>
-            <span>Надежные замки для контейнеров хранения обеспечивающие безопасность и защиту.</span>
+            <span
+              >Надежные замки для контейнеров хранения обеспечивающие
+              безопасность и защиту.</span
+            >
             <div class="btns">
               <button class="active">1</button>
               или
@@ -323,7 +425,10 @@
         <div class="block">
           <div class="left_side">
             <h3>SecureGuard Locks</h3>
-            <span>Надежные замки для контейнеров хранения обеспечивающие безопасность и защиту.</span>
+            <span
+              >Надежные замки для контейнеров хранения обеспечивающие
+              безопасность и защиту.</span
+            >
             <div class="btns">
               <button class="active">1</button>
               или
@@ -331,7 +436,7 @@
             </div>
           </div>
           <div class="right_side">
-            <img src="./assets/svg/our_products_2.png" alt="zamok_1">
+            <img src="./assets/svg/our_products_2.png" alt="zamok_1" />
           </div>
         </div>
       </div>
@@ -351,13 +456,13 @@
                 <li>-идентификацию клиентов</li>
                 <li>-быстрый и удобный доступ к контейнерам хранения.</li>
               </ul>
-  
+
               <p class="cost">1659₽</p>
               <p>в месяц</p>
               <span class="price">19 900 ₽/год</span>
             </div>
             <div class="right_side">
-              <img src="./assets/svg/our_products_2.png" alt="zamok_1">
+              <img src="./assets/svg/our_products_2.png" alt="zamok_1" />
             </div>
             <div class="btns">
               <button class="active">1</button>
@@ -376,13 +481,13 @@
                 <li>-идентификацию клиентов</li>
                 <li>-быстрый и удобный доступ к контейнерам хранения.</li>
               </ul>
-  
+
               <p class="cost">1659₽</p>
               <p>в месяц</p>
               <span class="price">19 900 ₽/год</span>
             </div>
             <div class="right_side">
-              <img src="./assets/svg/our_products_2.png" alt="zamok_1">
+              <img src="./assets/svg/our_products_2.png" alt="zamok_1" />
             </div>
             <div class="btns">
               <button class="active">1</button>
@@ -401,13 +506,13 @@
                 <li>-идентификацию клиентов</li>
                 <li>-быстрый и удобный доступ к контейнерам хранения.</li>
               </ul>
-  
+
               <p class="cost">1659₽</p>
               <p>в месяц</p>
               <span class="price">19 900 ₽/год</span>
             </div>
             <div class="right_side">
-              <img src="./assets/svg/our_products_2.png" alt="zamok_1">
+              <img src="./assets/svg/our_products_2.png" alt="zamok_1" />
             </div>
             <div class="btns">
               <button class="active">1</button>
@@ -418,9 +523,9 @@
           <button class="btn">Купить</button>
         </div>
       </div>
-
     </div>
 
     <script src="./scripts/burger.js"></script>
+    <script src="./scripts/modal.js"></script>
   </body>
 </html>
