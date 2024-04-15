@@ -126,6 +126,10 @@ input {
   font-size: 20px;
 }
 
+.eight_slide_container .row .left_side img {
+  z-index: 1;
+}
+
 @media screen and (max-width: 540px) {
   .eight_slide_container .left_side {
     display: none;
