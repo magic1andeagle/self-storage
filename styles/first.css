@@ -85,6 +85,8 @@
     top: -85px;
     right: 50px;
     transition: 0.15s all;
+
+    cursor: pointer;
 }
 
 .first_slide .right_side .reservation_block:hover{
